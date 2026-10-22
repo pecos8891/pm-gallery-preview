@@ -1,0 +1,16 @@
+/* PM Gallery redesign. Load AFTER styles.css. Existing catalog/admin selectors preserved. */
+:root{--bg:#171b1f;--panel:#20252a;--panel2:#252c32;--ink:#f0f2f3;--muted:#b9c5cc;--gold:#b9c5cc;--line:#46515a;--red:#384149}
+body{background:var(--bg);color:var(--ink)}
+header{background:#171b1ff5;border-color:#384149}nav a,header button{color:#d7e0e6}nav a:hover{color:#fff}header button{border-color:#62707a}
+.brand{gap:0}.brand>b{width:auto;height:auto;border:0;font:700 35px/1 Manrope,Arial,sans-serif;letter-spacing:.03em;color:#e5ebef}.brand>span{display:none}
+.hero{display:flex;flex-direction:column;align-items:stretch;gap:28px;padding:34px max(6vw,25px) 88px;min-height:0;background:linear-gradient(160deg,#171b1f,#20252a 65%,#171b1f)}
+.hero:after{border-color:#46515a}.hero>div:first-child{order:2;max-width:780px}.hero h1{font-size:clamp(52px,7vw,96px);line-height:.99;margin:16px 0 20px}.hero h1 em{color:#b9c5cc;font-style:normal}.hero .lead{max-width:720px;color:#b9c5cc}.hero .eyebrow{color:#aebcc6}.hero .button{background:transparent;color:#f0f2f3;border-color:#b9c5cc}.hero .button:hover{background:#b9c5cc;color:#171b1f}
+.hero-art.hero-feature{order:1;display:block;width:100%;height:auto;min-height:0;aspect-ratio:3/2;background:#11161b;overflow:hidden;border:1px solid #46515a}
+.hero-art.hero-feature:before,.hero-art.hero-feature:after,.hero-art.hero-feature .hero-art-label,.hero-art.hero-feature i{display:none!important}
+.hero-art.hero-feature>img{display:block;width:100%;height:100%;object-fit:cover}
+.hero-foot{bottom:24px;color:#aab7c1}.eyebrow,.heading h2 sup,.manifesto>span{color:#b9c5cc}
+.intro{background:#20252a;border-color:#46515a}.works{background:#171b1f}.manifesto{background:linear-gradient(110deg,#252c32,#171b1f);border-color:#46515a}.contact{background:linear-gradient(180deg,#20252a,#171b1f)}
+.intro em,.manifesto em,.contact em{color:#b9c5cc}.filters{border-color:#46515a}.filters button{color:#b9c5cc;border-color:#46515a}.filters button.active,.filters button:hover{background:#b9c5cc;color:#171b1f;border-color:#b9c5cc}
+.card{background:#20252a;border-color:#384149}.photo{background:#252c32}.photo:before{border-color:#b9c5cc22}.meta p,.status,.price{color:#b9c5cc}.button.dark,.button.light{background:#b9c5cc;border-color:#b9c5cc;color:#171b1f}.button.dark:hover,.button.light:hover{background:#e4e9ec}
+dialog{background:#20252a;border-color:#62707a}input,textarea,select{background:#171b1f;border-color:#62707a}label{color:#d4dde2}.admin-row{border-color:#46515a}
+@media(max-width:550px){.hero{padding:18px 16px 65px;gap:24px}.hero-art.hero-feature{aspect-ratio:3/2}.hero h1{font-size:clamp(46px,12vw,68px)}.hero .lead{font-size:13px}.hero-foot{display:none}.brand>b{font-size:30px}}
