@@ -1,0 +1,37 @@
+[
+  {
+    "id": "a2",
+    "title": "Лик из пепла",
+    "category": "Картины",
+    "price": 0,
+    "size": "Размер уточняется",
+    "description": "Авторское рельефное панно",
+    "image": "images/shadow-face-main.jpg",
+    "gallery": [
+      "images/shadow-face-main.jpg",
+      "images/shadow-face-detail.jpg"
+    ],
+    "available": true
+  },
+  {
+    "id": "a3",
+    "title": "Дракон древних легенд",
+    "category": "Арт-объекты",
+    "price": 0,
+    "size": "Размер уточняется",
+    "image": "images/dragon-main.jpg",
+    "gallery": [
+      "images/dragon-main.jpg",
+      "images/dragon-detail.jpg"
+    ],
+    "available": true
+  },
+  {
+    "id": "a1",
+    "title": "Mr. Gold",
+    "category": "Арт-объекты",
+    "price": 0,
+    "image": "images/mr-gold-art.jpg",
+    "available": true
+  }
+]
