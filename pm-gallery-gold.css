@@ -1,0 +1,25 @@
+/* PM Gallery — graphite & muted gold refinements.
+   Add AFTER pm-gallery.css. Purely visual; does not alter Supabase/admin behavior. */
+:root{--pm-accent:#b8a080;--pm-accent-bright:#d7bf98;--pm-border:#59616a}
+.works{background:radial-gradient(ellipse at 85% 0%,#26272a 0%,transparent 50%),#171b1f}
+.works .heading .eyebrow,.works .heading h2 sup{color:var(--pm-accent)}
+.works .heading h2{letter-spacing:-.035em}
+.filters{gap:9px;border-top-color:#514b43}
+.filters button{border:1px solid #62594d;color:#cbd1d5;background:transparent;padding:12px 18px;transition:background .2s,color .2s,border-color .2s}
+.filters button:hover,.filters button.active{background:var(--pm-accent);color:#171b1f;border-color:var(--pm-accent)}
+#collectionFilters{border-top:0;padding-top:0;margin-top:-10px}
+#collectionFilters button{border-color:#655846}
+#collectionFilters button.active{background:var(--pm-accent);border-color:var(--pm-accent);color:#171b1f}
+.grid{gap:22px}
+.card{background:#20252a;border:1px solid #46505a;overflow:hidden;transition:transform .22s,border-color .22s,box-shadow .22s}
+.card:hover,.card:focus-visible{border-color:var(--pm-accent);box-shadow:0 12px 34px #0005;transform:translateY(-3px)}
+.card .photo{background:#1b2025}
+.card .photo:before{border-color:#b8a08033}
+.card .meta{padding:20px 22px 22px}
+.card .meta h3{font-size:clamp(26px,2.6vw,35px);color:#f0f2f3}
+.card .meta p{color:#adb7be}
+.card .price,.card .status{color:var(--pm-accent-bright)}
+.card .meta{border-top:1px solid #65584655}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card .photo{height:300px}}
+@media(max-width:600px){.works{padding:65px 16px}.heading{align-items:start}.heading h2{font-size:clamp(44px,12vw,66px)}.heading>p{display:none}.filters{gap:7px;padding:20px 0 24px}.filters button{font-size:10px;padding:10px 13px;letter-spacing:.08em}#collectionFilters{margin-top:-7px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.card .photo{height:auto;aspect-ratio:4/5}.card .meta{padding:12px;gap:5px}.card .meta h3{font-size:24px;line-height:1.05}.card .meta p{font-size:10px}.card .price{font-size:10px}}
+@media(max-width:370px){.grid{grid-template-columns:1fr}.card .photo{aspect-ratio:4/3}.card .meta h3{font-size:28px}}
