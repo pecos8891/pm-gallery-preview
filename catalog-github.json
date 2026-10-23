@@ -49,5 +49,21 @@
     ],
     "available": true,
     "published": true
+  },
+  {
+    "id": "f8589eb3-6ca9-49c8-9804-0bc6468547a2",
+    "image": "images/catalog-af7d2f44-bf75-4af3-9eb8-9b67e8d188df.jpg",
+    "gallery": [
+      "images/catalog-af7d2f44-bf75-4af3-9eb8-9b67e8d188df.jpg",
+      "images/catalog-cdfc2e50-8e0b-421a-b1bd-df227197e8fe.jpg"
+    ],
+    "title": "Тест маска",
+    "category": "Маски",
+    "collection": "Самурай",
+    "price": 200,
+    "size": "1000",
+    "description": "Маска",
+    "available": true,
+    "published": false
   }
 ]
