@@ -20,11 +20,11 @@ const headers={Authorization:"Bearer "+token,Accept:"application/vnd.github+json
 const res=await fetch(api+"?t="+Date.now(),{headers,cache:"no-store"});
 if(!res.ok)throw Error("GitHub HTTP "+res.status);
 const file=await res.json();
-const decoded=new TextDecoder().decode(Uint8Array.from(atob(file.content.replace(/\\s/g,"")),ch=>ch.charCodeAt(0)));
+const decoded=new TextDecoder().decode(Uint8Array.from(atob(file.content.replace(/\s/g,"")),ch=>ch.charCodeAt(0)));
 const catalog=JSON.parse(decoded);
 const next=catalog.filter(x=>x.id!==target.id);
 if(next.length===catalog.length)throw Error("Карточка не найдена");
-const put=await fetch(api,{method:"PUT",headers:{...headers,"Content-Type":"application/json"},body:JSON.stringify({message:"Remove preview artwork",sha:file.sha,content:utf8base64(JSON.stringify(next,null,2)+"\\n")})});
+const put=await fetch(api,{method:"PUT",headers:{...headers,"Content-Type":"application/json"},body:JSON.stringify({message:"Remove preview artwork",sha:file.sha,content:utf8base64(JSON.stringify(next,null,2)+"\n")})});
 if(!put.ok)throw Error("GitHub HTTP "+put.status);
 $("editor").hidden=true;$("loadStatus").textContent="Карточка удалена. Обнови страницу."; 
 }catch(e){$("status").textContent="Ошибка: "+e.message}
